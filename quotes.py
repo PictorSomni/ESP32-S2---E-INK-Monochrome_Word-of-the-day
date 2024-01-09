@@ -16,7 +16,7 @@ positive_quotes = [
     {"quote": "Transformer la douleur en pouvoir.", "author": "" },
     {"quote": "Il y a de la beaute dans la simplicite.", "author": "" },
     {"quote": "Transformer tes blessures en sagesse.", "author": "" },
-    {"quote": "Votre meilleur professeur est votre dernière erreur.", "author": "" },
+    {"quote": "Votre meilleur professeur est votre derniere erreur.", "author": "" },
     {"quote": "C'est la volonte, pas la competence.", "author": "" },
     {"quote": "Un jour a la fois.", "author": "" },
     {"quote": "Tu comptes.", "author": "" },
@@ -43,14 +43,14 @@ positive_quotes = [
     {"quote": "Fais confiance au timing de ta vie.", "author": "" },
     {"quote": "Ne te sens pas coupable de faire ce qui est le mieux pour toi.", "author": "" },
     {"quote": "Parfois plus tard devient jamais. Fais le maintenant.", "author": "" },
-    {"quote": "Celui qui est courageux est libre.", "author": "Senèque" },
+    {"quote": "Celui qui est courageux est libre.", "author": "Seneque" },
     {"quote": "Cherchez le chercheur.", "author": "Ramana Maharshi" },
     {"quote": "La positivite, c'est de trouver le bien meme dans de mauvaises conditions.", "author": "" },
     {"quote": "Chaque mur est une porte.", "author": "Ralph Waldo Emerson" },
     {"quote": "Aime la vie que tu vis. Vis la vie que tu aimes.", "author": "Bob Marley" },
     {"quote": "Le passe ne correspond pas au futur.", "author": "Tony Robbins" },
     {"quote": "Personne n'est parfait, c'est pourquoi les crayons ont des gommes", "author": "Wolfgang Riebe" },
-    {"quote": "Le succès est l'enfant de l'audace.", "author": "Benjamin Disraeli" },
+    {"quote": "Le succes est l'enfant de l'audace.", "author": "Benjamin Disraeli" },
     {"quote": "Vous etes votre propre ame soeur.", "author": "Rupi Kaur" }
 ]
  
