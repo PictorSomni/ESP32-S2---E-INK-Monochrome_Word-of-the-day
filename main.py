@@ -8,7 +8,7 @@ import displayio
 import adafruit_ssd1680
 from secrets import secrets
 import terminalio
-from adafruit_display_text import label
+from adafruit_display_text import label, wrap_text_to_lines
 
 #### COMMENT FOR WIFI USE
 from quotes import positive_quotes
@@ -113,14 +113,18 @@ g = displayio.Group()
 quote = random.choice(positive_quotes)
 text = quote['quote']
 author = quote['author']
+print_lines = ""
 ####
 
 # LIMITS THE TEXT TO 'MAX_LENGTH' CHARACTERS #
 MAX_LENGTH = 20
-lines = [text[i:i + MAX_LENGTH] + '\n' for i in range(0, len(text), MAX_LENGTH)]
+# lines = [text[i:i + MAX_LENGTH] + '\n' for i in range(0, len(text), MAX_LENGTH)]
+lines = wrap_text_to_lines(text, MAX_LENGTH)
+for line in lines :
+    print_lines += f"\n {line}"
 
 print("-" * 40)
-print(''.join(lines))
+print(print_lines)
 print(author)
 print("-" * 40)
 
@@ -139,9 +143,8 @@ g.append(t)
 #     g.append(t)
 
 # Draw JSON 'text'
-text_group = displayio.Group(scale=2, x=0, y=20)
-text = f"{''.join(lines)}"
-text_area = label.Label(terminalio.FONT, text=text, color=FOREGROUND_COLOR,line_spacing=1)
+text_group = displayio.Group(scale=2, x=0, y=0)
+text_area = label.Label(terminalio.FONT, text=print_lines, color=FOREGROUND_COLOR,line_spacing=1)
 text_group.append(text_area)  # Add this text to the text group
 g.append(text_group)
 
